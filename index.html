@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Para ti ❤️</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Georgia, serif;
+    background: linear-gradient(135deg, #16000a, #4b071b, #120006);
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.contenedor {
+    max-width: 700px;
+    margin: auto;
+    padding: 50px 22px;
+}
+
+h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    font-size: 19px;
+    color: #ffd6df;
+}
+
+.corazon {
+    font-size: 70px;
+    animation: latir 1.3s infinite;
+    margin: 20px;
+}
+
+.carta {
+    background: rgba(255,255,255,0.09);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 25px;
+    padding: 28px;
+    margin-top: 30px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+}
+
+button {
+    margin-top: 25px;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 30px;
+    background: #ff4f76;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+#sorpresa {
+    display: none;
+    margin-top: 25px;
+    font-size: 20px;
+    color: #ffd6df;
+}
+
+@keyframes latir {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="contenedor">
+
+    <div class="corazon">❤️</div>
+
+    <h1>Para una persona muy especial</h1>
+
+    <p class="subtitulo">
+        Hay regalos que se compran...  
+        y hay regalos que se hacen con el corazón.
+    </p>
+
+    <div class="carta">
+
+        <h2>💌 Tengo algo que decirte</h2>
+
+        <p>
+            No quería darte simplemente un regalo.
+            Quería hacer algo que pudieras guardar,
+            recordar y volver a mirar algún día.
+        </p>
+
+        <p>
+            Por eso hice este pequeño rincón solamente para ti.
+        </p>
+
+        <p>
+            Espero que cuando lo veas sonrías,
+            porque esa era exactamente mi intención. ❤️
+        </p>
+
+        <button onclick="mostrarSorpresa()">
+            ✨ Hay algo más...
+        </button>
+
+        <div id="sorpresa">
+            <p>
+                Si llegaste hasta aquí...  
+                significa que abriste mi pequeño secreto. 🥹❤️
+            </p>
+
+            <p>
+                Y todavía falta la mejor parte...
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+function mostrarSorpresa() {
+    document.getElementById("sorpresa").style.display = "block";
+}
+</script>
+
+</body>
+</html>
